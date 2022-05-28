@@ -21,17 +21,7 @@ export default function Routes({
 }) {
   return (
     <>
-      <Router>
-        <Routes path="/" element={<Navbar />}>
-          <Route index element={<Today />} />
-          <Route path="tomorrow" element={<Tomorrow />} />
-          <Route path="yesterday" element={<Yesterday />} />
-          <Route path="weekly" element={<Weekly />} />
-          <Route path="map" element={<Map />} />
-          <Route path="aqi" element={<Aqi />} />
-          <Route path="*" element={}/>
-        </Routes>
-      </Router>
+      <Router></Router>
     </>
   );
 }
