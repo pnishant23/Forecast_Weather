@@ -2,7 +2,17 @@
 
 import axios from 'axios';
 import React, { useState, useEffect, useRef } from 'react';
-import App from './App';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Today from './pages/Today';
+import Tomorrow from './pages/Tomorrow';
+import Yesterday from './pages/Yesterday';
+import Weekly from './pages/Weekly';
+import Map from './pages/Map';
+import Aqi from './pages/Aqi';
+
+// import App from './App';
 import Navbar from './Components/Navbar';
 // import { Link } from 'react-router-dom';
 
@@ -17,8 +27,7 @@ export default function Main() {
   const [alerts, setAlerts] = useState('alerts !');
   const [aqi, setAqi] = useState('aqi !');
   const [cityName, setCityName] = useState();
-  const [KEY, setKEY] = useState('c2a63fec710d5b3c8746be0631294546')
-
+  const [KEY, setKEY] = useState('c2a63fec710d5b3c8746be0631294546');
 
   // console.log(cityName);
   // console.log(weather);
@@ -233,7 +242,7 @@ export default function Main() {
       </header>
 
       {/* PASSING WEATHER DATA TO ROUTES COMPONENTS */}
-      <App
+      {/* <App
         weather={weather}
         daily={daily}
         hourly={hourly}
@@ -241,7 +250,19 @@ export default function Main() {
         alerts={alerts}
         aqi={aqi}
         cityName={cityName}
-      />
+      /> */}
+
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Today />} />
+          <Route
+            path="/tomorrow"
+            render={() => {
+              <p>hello tomotrrr</p>;
+            }}
+          />
+        </Routes>
+      </Router>
     </>
   );
 }
