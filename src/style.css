@@ -1,0 +1,57 @@
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.primary-font {
+  font-family: 'Amaranth', sans-serif;
+}
+
+.secondary-font {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* .menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: '';
+  position: relative;
+  width: 2px;
+  height: 1px;
+  background: black;
+  border: solid 5px black;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-burger::after {
+  transform: translateY(-16px);
+}
+
+.menu-btn-burger::before {
+  transform: translateY(16px);
+}
+
+.menu-arrow:hover {
+  rotate: 45deg;
+} */
+
+.menu-open {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-close {
+  width: 0;
+  position: absolute;
+  left: 0px;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
