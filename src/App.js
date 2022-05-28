@@ -21,7 +21,12 @@ export default function Routes({
 }) {
   return (
     <>
-      <Router></Router>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Today />} />
+          <Route path="/tomorrow" element={<Tomorrow />} />
+        </Routes>
+      </Router>
     </>
   );
 }
