@@ -205,17 +205,6 @@ export default function Main() {
     }
   }, [searchedLocation]);
 
-  //MENU TOGGLE
-  const [display, setDisplay] = useState('none');
-
-  function toggleMenu() {
-    if (display == 'none') {
-      setDisplay('block');
-    } else {
-      setDisplay('none');
-    }
-  }
-
   return (
     <>
       <header className="w-screen h-auto flex items-center justify-between px-2.5">
