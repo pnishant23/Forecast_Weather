@@ -21,7 +21,9 @@ export default function Navbar() {
           <div className="menu-arrow mr-2.5" onClick={toggleMenu}>
             <AiOutlineMenu />
           </div>
-          <h1 className="primary-font text-2xl">Forecast</h1>
+          <h1 className="primary-font text-2xl">
+            <Link to="/">Forecast</Link>
+          </h1>
         </div>
         <nav className={display}>
           <div className="h-full shadow-md bg-white px-1 absolute">
