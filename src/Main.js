@@ -255,12 +255,11 @@ export default function Main() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Today />} />
-          <Route
-            path="/tomorrow"
-            render={() => {
-              <p>hello tomotrrr</p>;
-            }}
-          />
+          <Route path="/tomorrow" element={<Tomorrow />} />
+          <Route path="/yesterday" element={<Yesterday />} />
+          <Route path="/weekly" element={<Weekly />} />
+          <Route path="/aqi" element={<Aqi />} />
+          <Route path="/map" element={<Map />} />
         </Routes>
       </Router>
     </>
