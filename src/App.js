@@ -21,10 +21,17 @@ export default function Routes({
 }) {
   return (
     <>
+      <Router>
+        <Navbar />
         <Routes>
           <Route exact path="/" element={<Today />} />
           <Route path="/tomorrow" element={<Tomorrow />} />
+          <Route path="/yesterday" element={<Yesterday />} />
+          <Route path="/weekly" element={<Weekly />} />
+          <Route path="/aqi" element={<Aqi />} />
+          <Route path="/map" element={<Map />} />
         </Routes>
+      </Router>
     </>
   );
 }

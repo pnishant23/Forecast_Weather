@@ -11,6 +11,7 @@ import Yesterday from './pages/Yesterday';
 import Weekly from './pages/Weekly';
 import Map from './pages/Map';
 import Aqi from './pages/Aqi';
+import App from './App';
 
 // import App from './App';
 import Navbar from './Components/Navbar';
@@ -218,7 +219,6 @@ export default function Main() {
   return (
     <>
       <header className="w-screen h-auto flex items-center justify-between px-2.5">
-        <Navbar />
         {/* SEARCH BAR */}
         <form onSubmit={handleSubmit}>
           <div className="flex items-center">
@@ -242,7 +242,7 @@ export default function Main() {
       </header>
 
       {/* PASSING WEATHER DATA TO ROUTES COMPONENTS */}
-      {/* <App
+      <App
         weather={weather}
         daily={daily}
         hourly={hourly}
@@ -250,18 +250,7 @@ export default function Main() {
         alerts={alerts}
         aqi={aqi}
         cityName={cityName}
-      /> */}
-
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Today />} />
-          <Route path="/tomorrow" element={<Tomorrow />} />
-          <Route path="/yesterday" element={<Yesterday />} />
-          <Route path="/weekly" element={<Weekly />} />
-          <Route path="/aqi" element={<Aqi />} />
-          <Route path="/map" element={<Map />} />
-        </Routes>
-      </Router>
+      />
     </>
   );
 }
