@@ -111,7 +111,7 @@ export default function Navbar() {
 
       {/* DESKTOP NAVBAR */}
       <nav className="desktop-navbar w-full h-auto">
-        <ul className="flex justify-space-between items-center">
+        <ul className="flex justify-between items-center">
           <li>Aqi</li>
           <li>Yesterday</li>
           <li>Today</li>
