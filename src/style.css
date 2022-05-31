@@ -74,9 +74,9 @@ h1 {
   margin-left: 2rem;
 }
 
-.desktop-navbar ul li:last-child {
+/* .desktop-navbar ul li:last-child {
   margin-left: 0;
-}
+} */
 
 @media screen and (max-width: 480px) {
   .desktop-navbar {
