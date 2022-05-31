@@ -27,7 +27,7 @@ export default function Navbar() {
           >
             <IoIosArrowForward
               style={{ fontSize: '200%' }}
-              className="shadow-md"
+              className="shadow-md z-10"
             />
           </div>
           {/* <h1 className="primary-font text-2xl">
