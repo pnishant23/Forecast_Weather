@@ -110,8 +110,8 @@ export default function Navbar() {
       </div>
 
       {/* DESKTOP NAVBAR */}
-      <nav className="desktop-navbar w-full h-auto">
-        <ul className="flex justify-between items-center pr-5 pl-5">
+      <nav className="desktop-navbar w-full h-auto px-3">
+        <ul className="flex justify-between items-center px-5">
           <li>
             <Link to="aqi">Aqi</Link>
           </li>
