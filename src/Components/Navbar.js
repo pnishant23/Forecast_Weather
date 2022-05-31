@@ -112,12 +112,24 @@ export default function Navbar() {
       {/* DESKTOP NAVBAR */}
       <nav className="desktop-navbar w-full h-auto">
         <ul className="flex justify-between items-center pr-5 pl-5">
-          <li>Aqi</li>
-          <li>Yesterday</li>
-          <li>Today</li>
-          <li>Tomorrow</li>
-          <li>Weekly</li>
-          <li>Map</li>
+          <li>
+            <Link to="aqi">Aqi</Link>
+          </li>
+          <li>
+            <Link to="yesterday">Yesterday</Link>
+          </li>
+          <li>
+            <Link to="/">Today</Link>
+          </li>
+          <li>
+            <Link to="tomorrow">Tomorrow</Link>
+          </li>
+          <li>
+            <Link to="weekly">Weekly</Link>
+          </li>
+          <li>
+            <Link to="map">Map</Link>
+          </li>
         </ul>
       </nav>
     </>
