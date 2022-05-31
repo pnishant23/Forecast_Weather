@@ -110,7 +110,16 @@ export default function Navbar() {
       </div>
 
       {/* DESKTOP NAVBAR */}
-      <nav className="desktop-navbar" className="sm:none"></nav>
+      <nav className="desktop-navbar w-full h-auto">
+        <ul className="flex justify-center items-center">
+          <li>Aqi</li>
+          <li>Yesterday</li>
+          <li>Today</li>
+          <li>Tomorrow</li>
+          <li>Weekly</li>
+          <li>Map</li>
+        </ul>
+      </nav>
     </>
   );
 }
