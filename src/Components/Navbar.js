@@ -103,6 +103,9 @@ export default function Navbar() {
           </div>
         </nav>
       </div>
+
+      {/* DESKTOP NAVBAR */}
+      
     </>
   );
 }
