@@ -7,8 +7,9 @@ export default function Navbar() {
   const [display, setDisplay] = useState('menu-close');
 
   function toggleMenu() {
-    if (display === 'menu-close') {
-      setDisplay('menu-open');
+    let val = display;
+    if (val === 'menu-open') {
+      setDisplay('menu-close');
     } else {
       setDisplay('menu-close');
     }
@@ -18,8 +19,14 @@ export default function Navbar() {
     <>
       <div>
         <div className="flex items-center">
-          <div className="menu-arrow mr-2.5" onClick={toggleMenu}>
-            <AiOutlineMenu />
+          <div className="menu-arrow mr-2.5">
+            <button
+              onClick={() => {
+                toggleMenu();
+              }}
+            >
+              <AiOutlineMenu style={{ fontSize: '200%' }} />
+            </button>
           </div>
           {/* <h1 className="primary-font text-2xl">
             <Link to="/">Forecast</Link>
