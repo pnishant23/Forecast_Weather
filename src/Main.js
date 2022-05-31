@@ -207,7 +207,7 @@ export default function Main() {
 
   return (
     <>
-      <header className="w-screen h-auto flex items-center justify-between px-2.5">
+      <header className="w-screen h-auto flex items-center justify-between md:justify-around px-2.5">
         <h1 className="primary-font text-2xl">Forecast</h1>
         {/* SEARCH BAR */}
         <form onSubmit={handleSubmit}>
