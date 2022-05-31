@@ -52,7 +52,7 @@ h1 {
 }
 
 .menu-close {
-  width: 100%;
+  width: 0;
   position: absolute;
   left: 0px;
   height: 100vh;

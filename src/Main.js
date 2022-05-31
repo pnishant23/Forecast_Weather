@@ -3,7 +3,7 @@
 import axios from 'axios';
 import React, { useState, useEffect, useRef } from 'react';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Today from './pages/Today';
 import Tomorrow from './pages/Tomorrow';
@@ -208,6 +208,7 @@ export default function Main() {
   return (
     <>
       <header className="w-screen h-auto flex items-center justify-between px-2.5">
+        <h1 className="primary-font text-2xl">Forecast</h1>
         {/* SEARCH BAR */}
         <form onSubmit={handleSubmit}>
           <div className="flex items-center">
