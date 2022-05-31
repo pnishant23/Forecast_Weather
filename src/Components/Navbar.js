@@ -8,8 +8,8 @@ export default function Navbar() {
 
   function toggleMenu() {
     let val = display;
-    if (val === 'menu-open') {
-      setDisplay('menu-close');
+    if (val === 'menu-close') {
+      setDisplay('menu-open');
     } else {
       setDisplay('menu-close');
     }
@@ -19,14 +19,13 @@ export default function Navbar() {
     <>
       <div>
         <div className="flex items-center">
-          <div className="menu-arrow mr-2.5">
-            <button
-              onClick={() => {
-                toggleMenu();
-              }}
-            >
-              <AiOutlineMenu style={{ fontSize: '200%' }} />
-            </button>
+          <div
+            className="menu-arrow mr-2.5"
+            onClick={() => {
+              toggleMenu();
+            }}
+          >
+            <AiOutlineMenu style={{ fontSize: '200%' }} />
           </div>
           {/* <h1 className="primary-font text-2xl">
             <Link to="/">Forecast</Link>
