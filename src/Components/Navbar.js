@@ -27,7 +27,12 @@ export default function Navbar() {
           >
             <IoIosArrowForward
               style={{ fontSize: '200%' }}
-              className="shadow-md z-10 md:hidden"
+              className="shadow-md z-10 md:hidden menu-arrow"
+              className={
+                display === 'menu-open'
+                  ? 'arrow-left shadow-md z-10 md:hidden menu-arrow'
+                  : 'arrow-right shadow-md z-10 md:hidden menu-arrow'
+              }
             />
           </div>
           {/* <h1 className="primary-font text-2xl">
@@ -105,7 +110,7 @@ export default function Navbar() {
       </div>
 
       {/* DESKTOP NAVBAR */}
-      
+      <nav className="desktop-navbar" className="sm:none"></nav>
     </>
   );
 }
