@@ -25,7 +25,7 @@ export default function Navbar() {
               toggleMenu();
             }}
           >
-            <AiOutlineMenu style={{ fontSize: '200%' }} />
+            <IoIosArrowForward style={{ fontSize: '200%' }} />
           </div>
           {/* <h1 className="primary-font text-2xl">
             <Link to="/">Forecast</Link>
