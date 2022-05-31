@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 
-import { AiOutlineMenu } from 'react-icons/ai';
+import { IoIosArrowForward } from 'react-icons/io';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 export default function Navbar() {
@@ -25,7 +25,10 @@ export default function Navbar() {
               toggleMenu();
             }}
           >
-            <IoIosArrowForward style={{ fontSize: '200%' }} />
+            <IoIosArrowForward
+              style={{ fontSize: '200%' }}
+              className="shadow-md"
+            />
           </div>
           {/* <h1 className="primary-font text-2xl">
             <Link to="/">Forecast</Link>
