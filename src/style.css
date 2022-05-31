@@ -70,9 +70,9 @@ h1 {
   transition: all 0.5s ease-in-out;
 }
 
-.desktop-navbar ul li {
+/* .desktop-navbar ul li {
   margin-left: 2rem;
-}
+} */
 
 /* .desktop-navbar ul li:last-child {
   margin-left: 0;
